@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JavaScript</title>
+        <script>
+            
+
+            //tabuada
+            for(var x = 1; x < 10; x++) {
+                for(var y = 1; y < 10; y++) {
+                    var result = x*y
+                    document.write(x + ' x ' + y + ' = ' + result + '<br>') 
+                }
+                document.write('<hr>')
+            }
+
+            // for in
+            var lista = []
+            lista.push('jorge')
+            lista.push('breder')
+            lista.push('manu')
+            lista.push('luiza')
+            lista.push('pedro')
+
+            for(var x in lista) {
+                document.write('indice = ' + x + ' e valor ' + lista[x] + '<br>')
+            }
+            document.write('<hr>')
+
+            // for each
+            var lista_2 = []
+            lista_2.push('jorge')
+            lista_2.push('breder')
+            lista_2.push('manu')
+            lista_2.push('luiza')
+            lista_2.push('pedro')
+
+            lista_2.forEach(function(valor, indice, array) {
+                document.write('indice' + indice)
+            })
+
+        </script>
+    </head>
+    <body>
+    
+        
+    </body>
+</html>
